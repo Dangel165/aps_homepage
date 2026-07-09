@@ -403,15 +403,17 @@ h2 {
   top: 96px;
   align-self: start;
   margin: 8px 0 0;
-  color: #e8d8ff;
+  color: #dffbff;
   font-size: 2rem;
-  text-shadow: 0 0 22px rgba(139, 92, 246, 0.34);
+  text-shadow:
+    0 0 18px rgba(0, 229, 255, 0.36),
+    0 0 28px rgba(0, 255, 200, 0.18);
 }
 
 .archive-list {
   position: relative;
   display: grid;
-  border-left: 1px solid rgba(187, 134, 252, 0.32);
+  border-left: 1px solid rgba(0, 229, 255, 0.34);
 }
 
 .archive-item {
@@ -431,10 +433,12 @@ h2 {
   width: 11px;
   height: 11px;
   content: "";
-  background: #b994ff;
-  border: 3px solid rgba(185, 148, 255, 0.28);
+  background: var(--secondary);
+  border: 3px solid rgba(0, 229, 255, 0.24);
   border-radius: 50%;
-  box-shadow: 0 0 18px rgba(185, 148, 255, 0.46);
+  box-shadow:
+    0 0 16px rgba(0, 255, 200, 0.44),
+    0 0 28px rgba(0, 229, 255, 0.18);
 }
 
 .archive-item time {
@@ -460,11 +464,11 @@ h2 {
 
 .archive-tags span {
   padding: 7px 10px;
-  color: #d6b4ff;
+  color: var(--secondary);
   font-size: 0.76rem;
   font-weight: 900;
-  background: rgba(120, 60, 180, 0.14);
-  border: 1px solid rgba(185, 148, 255, 0.26);
+  background: rgba(0, 229, 255, 0.08);
+  border: 1px solid rgba(0, 255, 200, 0.24);
   border-radius: 999px;
 }
 

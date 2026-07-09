@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="APS 정보보안 동아리 공식 홈페이지">
+    <title>{% block title %}APS{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+  </head>
+  <body>
+    {% if error_message is defined %}
+      <!-- A static error state avoids leaking framework or filesystem details. -->
+      <main class="error-page" aria-labelledby="error-title">
+        <a class="brand-link" href="{{ url_for('intro') }}" aria-label="APS 인트로로 이동">
+          <span class="brand-mark">APS</span>
+        </a>
+        <h1 id="error-title">{{ error_message }}</h1>
+        <a class="primary-link" href="{{ url_for('home') }}">홈으로 이동</a>
+      </main>
+    {% else %}
+      {% block content %}{% endblock %}
+    {% endif %}
+  </body>
+</html>

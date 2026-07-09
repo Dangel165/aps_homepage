@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Security awareness network">
+  <rect width="960" height="540" fill="#050816"/>
+  <path d="M230 300l160-128 176 104 170-148M230 300l180 94 156-118 170 120" fill="none" stroke="#00e5ff" stroke-width="6" stroke-opacity=".62"/>
+  <circle cx="230" cy="300" r="48" fill="#0f172a" stroke="#00ffc8" stroke-width="6"/>
+  <circle cx="390" cy="172" r="48" fill="#0f172a" stroke="#00e5ff" stroke-width="6"/>
+  <circle cx="566" cy="276" r="48" fill="#0f172a" stroke="#00ffc8" stroke-width="6"/>
+  <circle cx="736" cy="128" r="48" fill="#0f172a" stroke="#00e5ff" stroke-width="6"/>
+  <circle cx="410" cy="394" r="48" fill="#0f172a" stroke="#00ffc8" stroke-width="6"/>
+  <circle cx="736" cy="396" r="48" fill="#0f172a" stroke="#00e5ff" stroke-width="6"/>
+  <text x="480" y="474" fill="#00ffc8" font-family="Arial, sans-serif" font-size="38" font-weight="700" text-anchor="middle">SECURITY AWARENESS</text>
+</svg>

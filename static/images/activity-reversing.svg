@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Reverse engineering binary analysis">
+  <rect width="960" height="540" fill="#050816"/>
+  <rect x="150" y="110" width="660" height="320" rx="12" fill="#0f172a" stroke="#00e5ff" stroke-width="5"/>
+  <text x="214" y="190" fill="#00ffc8" font-family="Consolas, monospace" font-size="34">55 48 89 E5</text>
+  <text x="214" y="250" fill="#00e5ff" font-family="Consolas, monospace" font-size="34">8B 45 FC 31</text>
+  <text x="214" y="310" fill="#00ffc8" font-family="Consolas, monospace" font-size="34">E8 7A FF FF</text>
+  <text x="214" y="370" fill="#00e5ff" font-family="Consolas, monospace" font-size="34">C3 90 90 90</text>
+  <path d="M650 160l88 110-88 110" fill="none" stroke="#00ffc8" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

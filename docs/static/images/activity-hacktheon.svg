@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="HackTheon competition shield">
+  <rect width="960" height="540" fill="#050816"/>
+  <path d="M480 86l252 94c-18 152-94 246-252 302C322 426 246 332 228 180z" fill="#0f172a" stroke="#00e5ff" stroke-width="6"/>
+  <path d="M372 282l72 72 154-172" fill="none" stroke="#00ffc8" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M326 178h308M304 230h352M316 392h328" stroke="#00e5ff" stroke-opacity=".22" stroke-width="4"/>
+  <text x="480" y="448" fill="#00e5ff" font-family="Arial, sans-serif" font-size="40" font-weight="800" text-anchor="middle">HACKTHEON</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Web hacking seminar browser">
+  <rect width="960" height="540" fill="#050816"/>
+  <rect x="160" y="112" width="640" height="338" rx="18" fill="#0f172a" stroke="#00e5ff" stroke-width="5"/>
+  <path d="M160 174h640" stroke="#00e5ff" stroke-width="5"/>
+  <circle cx="202" cy="143" r="10" fill="#00ffc8"/>
+  <circle cx="236" cy="143" r="10" fill="#00e5ff"/>
+  <circle cx="270" cy="143" r="10" fill="#64748b"/>
+  <path d="M294 298l-72-54 72-54M666 190l72 54-72 54M412 350l136-210" fill="none" stroke="#00ffc8" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="480" y="414" fill="#00e5ff" font-family="Arial, sans-serif" font-size="42" font-weight="700" text-anchor="middle">WEB SECURITY</text>
+</svg>

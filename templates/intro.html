@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="APS secure access gateway">
+    <title>APS Secure Access Gateway</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/intro.css') }}">
+    <script src="{{ url_for('static', filename='js/intro.js') }}" defer></script>
+  </head>
+  <body>
+    <main class="intro-shell">
+      <div class="security-backdrop" aria-hidden="true">
+        <div class="network-grid"></div>
+        <div class="data-stream stream-one"></div>
+        <div class="data-stream stream-two"></div>
+        <div class="particle-field"></div>
+      </div>
+
+      <section class="gateway-panel" aria-label="APS secure access gateway">
+        <a class="auth-trigger" href="{{ url_for('home') }}" aria-label="Authenticate and enter APS homepage">
+          <span class="aps-logo-stage" aria-hidden="true">
+            <span class="logo-aura"></span>
+            <span class="lock-particles">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span class="logo-orbit"></span>
+            <span class="aps-logo-glass">
+              {% if logo_available %}
+                <img class="intro-aps-logo" src="{{ url_for('static', filename='images/aps_logo.png') }}" alt="">
+              {% else %}
+                <span class="intro-text-logo">APS</span>
+              {% endif %}
+              <span class="logo-lock-overlay">
+                <span class="lock-shield"></span>
+              </span>
+            </span>
+            <span class="lock-icon logo-lock" aria-hidden="true">
+              <span class="lock-shackle"></span>
+              <span class="lock-body">
+                <span class="keyhole"></span>
+              </span>
+            </span>
+          </span>
+
+        </a>
+
+        <div class="auth-console" aria-hidden="true">
+          <div class="security-code" data-security-code>SECURITY ACCESS VERIFIED</div>
+          <div class="progress-row">
+            <div class="progress-track">
+              <div class="progress-fill" data-progress-fill></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

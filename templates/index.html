@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}APS | Home{% endblock %}
+
+{% block content %}
+  <header class="site-header" aria-label="APS 홈페이지 상단 메뉴">
+    <a class="brand-link" href="{{ url_for('intro') }}" aria-label="APS 인트로로 이동">
+      {% if logo_available %}
+        <img class="brand-logo" src="{{ url_for('static', filename='images/aps_logo.png') }}" alt="APS 로고">
+      {% else %}
+        <span class="brand-mark">APS</span>
+      {% endif %}
+    </a>
+    <nav class="site-nav" aria-label="주요 페이지">
+      <a href="{{ url_for('home') }}" aria-current="page">Home</a>
+      <a href="{{ url_for('why') }}">Why APS?</a>
+      <a href="{{ url_for('activities') }}">Activities</a>
+    </nav>
+  </header>
+
+  <main class="page-transition">
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-visual" aria-hidden="true">
+        {% if logo_available %}
+          <img class="hero-logo" src="{{ url_for('static', filename='images/aps_logo.png') }}" alt="">
+        {% else %}
+          <span class="hero-text-logo">APS</span>
+        {% endif %}
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">우석대학교 정보보안학과</p>
+        <h1 id="hero-title">APS</h1>
+        <p class="hero-description">
+          본 동아리는 정보보안 교과 과정에서 습득한 지식을 바탕으로, 실무에 필요한 교과 외 기술을 학습하고 다양한 보안 분야에 대한 이해를 높이는 것을 목표로 한다.
+        </p>
+        <p class="hero-description">
+          또한, 교외 멘토를 섭외하여 실무 중심의 지식을 습득함으로써, 추후 취업 경쟁력을 강화하고 실전 경험을 쌓고자 한다.
+        </p>
+      </div>
+    </section>
+
+    <section class="activity-preview" aria-labelledby="activity-preview-title">
+      <div class="preview-heading">
+        <div>
+          <p class="eyebrow">Recent Activity</p>
+          <h2 id="activity-preview-title">동아리 활동 내역</h2>
+        </div>
+        <a class="preview-link" href="{{ url_for('activities') }}">전체 보기</a>
+      </div>
+
+      <div class="activity-preview-list">
+        {% for activity in recent_activities %}
+          <article class="activity-preview-item">
+            <time datetime="{{ activity.date }}">{{ activity.date }}</time>
+            <h3>{{ activity.title }}</h3>
+            <p>
+              <span>{{ activity.category }}</span>
+              {% if activity.award %}
+                <span>{{ activity.award }}</span>
+              {% endif %}
+              {% if activity.organizer %}
+                <span>{{ activity.organizer }}</span>
+              {% endif %}
+            </p>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>APS</span>
+    <span id="current-year">2026</span>
+  </footer>
+{% endblock %}

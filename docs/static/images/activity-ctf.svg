@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="CTF team practice flag">
+  <rect width="960" height="540" fill="#050816"/>
+  <path d="M180 90h560l80 90-80 90H180z" fill="#0f172a" stroke="#00e5ff" stroke-width="4"/>
+  <path d="M230 385V150h36v235" stroke="#00ffc8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M266 160h260l-44 62 44 62H266z" fill="#00e5ff" fill-opacity=".18" stroke="#00e5ff" stroke-width="8"/>
+  <text x="520" y="332" fill="#00ffc8" font-family="Arial, sans-serif" font-size="72" font-weight="800" text-anchor="middle">CTF</text>
+  <circle cx="732" cy="390" r="42" fill="none" stroke="#00ffc8" stroke-width="5"/>
+</svg>

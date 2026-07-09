@@ -1,0 +1,325 @@
+[
+  {
+    "date": "2025-12-17",
+    "title": "방화벽(pfSense) 운영",
+    "category": "기타 활동",
+    "organizer": "APS"
+  },
+  {
+    "date": "2025-12-17",
+    "title": "2025-2 우석대학교 캡스톤디자인 경진대회",
+    "category": "수상경력",
+    "award": "우수상",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2026-02-28",
+    "title": "개인 홈페이지 운영",
+    "category": "기타 활동",
+    "organizer": "APS"
+  },
+  {
+    "date": "2026-02-25",
+    "title": "APS 홈페이지 운영",
+    "category": "기타 활동",
+    "organizer": "APS"
+  },
+  {
+    "date": "2026-02-25",
+    "title": "SIEM(ELK Stack) 운영 및 관제",
+    "category": "기타 활동",
+    "organizer": "APS"
+  },
+  {
+    "date": "2026-02-20",
+    "title": "가상화 서버(ESXi) 운영",
+    "category": "기타 활동",
+    "organizer": "APS"
+  },
+  {
+    "date": "2026-01-24",
+    "title": "CoS Pro 3급 (Python)",
+    "category": "자격증",
+    "organizer": "YBM"
+  },
+  {
+    "date": "2025-12-31",
+    "title": "APS DFL 학습사이트 개발",
+    "category": "기타 활동",
+    "organizer": "APS"
+  },
+  {
+    "date": "2025-12-09",
+    "title": "2025 우석대학교 컴퓨터사고 창작대회",
+    "category": "수상경력",
+    "award": "대상",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2025-12-09",
+    "title": "네트워크관리사 2급",
+    "category": "자격증",
+    "organizer": "한국정보통신자격협회"
+  },
+  {
+    "date": "2025-11-27",
+    "title": "2025 KUCIS 우수동아리 발표평가 참가",
+    "category": "기타 활동",
+    "organizer": "KISIA"
+  },
+  {
+    "date": "2025-11-26",
+    "title": "보안뉴스 스크랩",
+    "category": "기타 활동",
+    "organizer": "APS"
+  },
+  {
+    "date": "2025-11-21",
+    "title": "2025 2학기 JBNU 전공탐색박람회 부스 운영",
+    "category": "기타 활동",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2025-09-25",
+    "title": "클라우드 기반 네트워크관리사 2급 심화과정 프로그램 참여",
+    "category": "학술·연구활동",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2025-09-24",
+    "title": "KISIA 온택트 융합보안 (시스템 보안 3차) 수료",
+    "category": "학술·연구활동",
+    "organizer": "KISIA"
+  },
+  {
+    "date": "2025-09-16",
+    "title": "익산남성고등학교 해킹 시연",
+    "category": "기타 활동",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2025-08-19",
+    "title": "KUCIS 정보보호 온라인 실습교육 (침해사고분석) 수료",
+    "category": "학술·연구활동",
+    "organizer": "KISIA"
+  },
+  {
+    "date": "2025-07-29",
+    "title": "2025 KUCIS 정보보호 기업견학",
+    "category": "기타 활동",
+    "organizer": "KISIA"
+  },
+  {
+    "date": "2025-07-26",
+    "title": "2025 KUCIS 호남권 세미나 참관 및 발표",
+    "category": "학술·연구활동",
+    "organizer": "KISIA"
+  },
+  {
+    "date": "2025-07-25",
+    "title": "전자캐드기능사",
+    "category": "자격증",
+    "organizer": "한국산업인력공단"
+  },
+  {
+    "date": "2025-07-24",
+    "title": "2025 정보보안학과 고등학생 대학 [콕 집어 전공체험] 행사 진행",
+    "category": "기타 활동",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2025-07-21",
+    "title": "APS Digital Forensic CTF 개최",
+    "category": "기타 활동",
+    "organizer": "APS"
+  },
+  {
+    "date": "2025-07-18",
+    "title": "2025 KUCIS 온라인 CTF 대회",
+    "category": "기타 활동",
+    "organizer": "KISIA"
+  },
+  {
+    "date": "2025-07-11",
+    "title": "호남제일고등학교 해킹 시연",
+    "category": "기타 활동",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2025-07-02",
+    "title": "여름방학 특별세미나 - 디지털포렌식 과정",
+    "category": "학술·연구활동",
+    "organizer": "APS"
+  },
+  {
+    "date": "2025-07-02",
+    "title": "여름방학 특별세미나 - 네트워크 과정: 네트워크 이론 기초",
+    "category": "학술·연구활동",
+    "organizer": "APS"
+  },
+  {
+    "date": "2025-06-25",
+    "title": "KISIA 온택트 융합보안 (디지털포렌식 1차) 수료",
+    "category": "학술·연구활동",
+    "organizer": "KISIA"
+  },
+  {
+    "date": "2025-06-25",
+    "title": "KISIA 온택트 융합보안 (접근통제 및 인증 1차) 수료",
+    "category": "학술·연구활동",
+    "organizer": "KISIA"
+  },
+  {
+    "date": "2025-05-16",
+    "title": "2025 KUCIS 네트워킹 데이 참가",
+    "category": "기타 활동",
+    "organizer": "KISIA"
+  },
+  {
+    "date": "2025-05-09",
+    "title": "군산동고등학교 해킹 시연",
+    "category": "기타 활동",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2025-04-23",
+    "title": "(국제)몽골고등학교 해킹시연(2차)",
+    "category": "기타 활동",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2025-04-09",
+    "title": "(국제)몽골고등학교 해킹시연(1차)",
+    "category": "기타 활동",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2025-01-20",
+    "title": "2024 우석대학교 빅데이터 가시화 공모전",
+    "category": "수상경력",
+    "award": "우수상",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2024-12-30",
+    "title": "보안관제실/서버실 관리 및 점검",
+    "category": "기타 활동",
+    "organizer": "APS"
+  },
+  {
+    "date": "2024-12-12",
+    "title": "2024 우석대학교 컴퓨터사고 창작대회",
+    "category": "수상경력",
+    "award": "은상",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2024-11-27",
+    "title": "2024 블록체인 진흥주간 X 웹 3.0 컨퍼런스 참가",
+    "category": "학술·연구활동",
+    "organizer": "KISA, IITP"
+  },
+  {
+    "date": "2024-11-23",
+    "title": "2024 정보보안학과 홈커밍데이",
+    "category": "기타 활동",
+    "organizer": "정보보안학과"
+  },
+  {
+    "date": "2024-10-25",
+    "title": "Django 기반 파이썬 웹프로그래밍 프로그램 참여",
+    "category": "학술·연구활동",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2024-10-19",
+    "title": "2024 고교-대학 연계 공동교육과정 주말강좌 보조",
+    "category": "기타 활동",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2024-09-30",
+    "title": "취업동아리-정보보안 직무 취업 역량강화 활동 참여",
+    "category": "학술·연구활동",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2024-09-30",
+    "title": "호남권 정보보호 특별과정 오프라인 미니 챌린지 참가",
+    "category": "기타 활동",
+    "organizer": "KISA"
+  },
+  {
+    "date": "2024-09-12",
+    "title": "2024 실전형 사이버훈련장 악성 실행파일 분석 교육 이수",
+    "category": "학술·연구활동",
+    "organizer": "KISA"
+  },
+  {
+    "date": "2024-08-26",
+    "title": "2024 CHFI 자격증 과정 프로그램 참여",
+    "category": "학술·연구활동",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2024-08-07",
+    "title": "김제여자고등학교 해킹 시연",
+    "category": "기타 활동",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2024-07-25",
+    "title": "2024 정보보안학과 고등학생 대상 [콕! 집어 전공체험] 행사 진행",
+    "category": "기타 활동",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2024-07-19",
+    "title": "리버스 코드 엔지니어링 오프라인 미니 챌린지 참가",
+    "category": "기타 활동",
+    "organizer": "KISA"
+  },
+  {
+    "date": "2024-07-14",
+    "title": "2024 실전형 사이버훈련장 리버스 코드 엔지니어링 교육 이수",
+    "category": "학술·연구활동",
+    "organizer": "KISA"
+  },
+  {
+    "date": "2024-06-28",
+    "title": "리눅스마스터 2급",
+    "category": "자격증",
+    "organizer": "한국정보통신자격협회"
+  },
+  {
+    "date": "2024-06-05",
+    "title": "KISIA 온택트 융합보안 (IoT 해킹/취약점 및 대응 1차) 수료",
+    "category": "학술·연구활동",
+    "organizer": "KISIA"
+  },
+  {
+    "date": "2024-05-08",
+    "title": "KISIA 온택트 융합보안 (시스템 보안 1차) 수료",
+    "category": "학술·연구활동",
+    "organizer": "KISIA"
+  },
+  {
+    "date": "2024-05-08",
+    "title": "KISIA 온택트 융합보안 (네트워크 보안 1차) 수료",
+    "category": "학술·연구활동",
+    "organizer": "KISIA"
+  },
+  {
+    "date": "2024-01-19",
+    "title": "2023 우석대학교 컴퓨터사고 창작대회",
+    "category": "수상경력",
+    "award": "금상",
+    "organizer": "우석대학교"
+  },
+  {
+    "date": "2023-05-10",
+    "title": "CCNA",
+    "category": "자격증",
+    "organizer": "Cisco"
+  }
+]

@@ -403,17 +403,17 @@ h2 {
   top: 96px;
   align-self: start;
   margin: 8px 0 0;
-  color: #dffbff;
+  color: var(--primary);
   font-size: 2rem;
   text-shadow:
-    0 0 18px rgba(0, 229, 255, 0.36),
-    0 0 28px rgba(0, 255, 200, 0.18);
+    0 0 18px rgba(0, 229, 255, 0.72),
+    0 0 34px rgba(0, 255, 200, 0.34);
 }
 
 .archive-list {
   position: relative;
   display: grid;
-  border-left: 1px solid rgba(0, 229, 255, 0.34);
+  border-left: 1px solid rgba(0, 229, 255, 0.72);
 }
 
 .archive-item {
@@ -433,12 +433,12 @@ h2 {
   width: 11px;
   height: 11px;
   content: "";
-  background: var(--secondary);
-  border: 3px solid rgba(0, 229, 255, 0.24);
+  background: var(--primary);
+  border: 3px solid rgba(0, 255, 200, 0.32);
   border-radius: 50%;
   box-shadow:
-    0 0 16px rgba(0, 255, 200, 0.44),
-    0 0 28px rgba(0, 229, 255, 0.18);
+    0 0 18px rgba(0, 229, 255, 0.78),
+    0 0 34px rgba(0, 255, 200, 0.36);
 }
 
 .archive-item time {
@@ -464,12 +464,13 @@ h2 {
 
 .archive-tags span {
   padding: 7px 10px;
-  color: var(--secondary);
+  color: var(--primary);
   font-size: 0.76rem;
   font-weight: 900;
-  background: rgba(0, 229, 255, 0.08);
-  border: 1px solid rgba(0, 255, 200, 0.24);
+  background: rgba(0, 229, 255, 0.12);
+  border: 1px solid rgba(0, 229, 255, 0.38);
   border-radius: 999px;
+  box-shadow: 0 0 14px rgba(0, 229, 255, 0.1);
 }
 
 .section-heading {

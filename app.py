@@ -18,6 +18,7 @@ import re
 import secrets
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 from flask import Flask, abort, render_template, url_for
 
@@ -28,6 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 STATIC_IMAGES_DIR = BASE_DIR / "static" / "images"
 ACTIVITIES_PATH = DATA_DIR / "activities.json"
+PROFILES_PATH = DATA_DIR / "profiles.json"
 
 
 # Only plain filenames are accepted for JSON-provided images. This avoids
@@ -112,6 +114,16 @@ def create_app() -> Flask:
             logo_available=logo_available(),
         )
 
+    @app.route("/profiles")
+    def profiles():
+        """Render the read-only member profile page."""
+
+        return render_template(
+            "profiles.html",
+            profiles=load_profiles(),
+            logo_available=logo_available(),
+        )
+
     @app.errorhandler(404)
     def not_found(_error):
         """Return a small static error page for unknown routes."""
@@ -154,6 +166,24 @@ def load_activities() -> list[dict[str, Any]]:
 
     activities = [validate_activity(item) for item in raw_data]
     return sorted(activities, key=lambda activity: activity["date"], reverse=True)
+
+
+def load_profiles() -> list[dict[str, Any]]:
+    """Load and validate profile cards from the fixed JSON file."""
+
+    resolved_path = PROFILES_PATH.resolve()
+    if DATA_DIR.resolve() not in resolved_path.parents:
+        abort(500)
+
+    try:
+        raw_data = json.loads(resolved_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        abort(500)
+
+    if not isinstance(raw_data, list) or len(raw_data) > 24:
+        abort(500)
+
+    return [validate_profile(item) for item in raw_data]
 
 
 def group_activities_by_year(activities: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -209,6 +239,70 @@ def validate_activity(item: Any) -> dict[str, Any]:
 
     if "participant" in item or "participants" in item:
         abort(500)
+
+    return validated
+
+
+def validate_profile(item: Any) -> dict[str, Any]:
+    """Validate one profile record before rendering it."""
+
+    if not isinstance(item, dict):
+        abort(500)
+
+    validated: dict[str, Any] = {}
+    text_limits = {
+        "name": 40,
+        "affiliation": 80,
+        "role": 60,
+        "intro": 360,
+    }
+
+    for field, limit in text_limits.items():
+        value = item.get(field)
+        if not isinstance(value, str) or not value.strip() or len(value.strip()) > limit:
+            abort(500)
+        validated[field] = value.strip()
+
+    photo = item.get("photo", "")
+    if photo:
+        if not isinstance(photo, str) or not SAFE_IMAGE_NAME.fullmatch(photo.strip()):
+            abort(500)
+        validated["photo"] = photo.strip()
+    else:
+        validated["photo"] = ""
+
+    for list_field in ("history", "fields"):
+        values = item.get(list_field)
+        min_items = 0 if list_field == "history" else 1
+        if (
+            not isinstance(values, list)
+            or len(values) < min_items
+            or len(values) > 12
+            or any(not isinstance(value, str) or not value.strip() or len(value.strip()) > 220 for value in values)
+        ):
+            abort(500)
+        validated[list_field] = [value.strip() for value in values]
+
+    links = item.get("links", {})
+    if links:
+        if not isinstance(links, dict) or len(links) > 4:
+            abort(500)
+
+        validated_links: dict[str, str] = {}
+        for label, href in links.items():
+            if label not in {"blog", "github", "notion", "team"}:
+                abort(500)
+            if not isinstance(href, str) or len(href.strip()) > 160:
+                abort(500)
+
+            parsed = urlparse(href.strip())
+            if parsed.scheme != "https" or not parsed.netloc or parsed.username or parsed.password:
+                abort(500)
+
+            validated_links[label] = href.strip()
+        validated["links"] = validated_links
+    else:
+        validated["links"] = {}
 
     return validated
 

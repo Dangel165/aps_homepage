@@ -19,6 +19,7 @@ PAGES = {
     "/home": ("home/index.html", "../"),
     "/why": ("why/index.html", "../"),
     "/activities": ("activities/index.html", "../"),
+    "/profiles": ("profiles/index.html", "../"),
 }
 
 
@@ -35,11 +36,12 @@ def rewrite_absolute_urls(html: str, prefix: str) -> str:
                 "/home": f"{prefix}home/",
                 "/why": f"{prefix}why/",
                 "/activities": f"{prefix}activities/",
+                "/profiles": f"{prefix}profiles/",
                 "/": prefix or "./",
             }.get(value, value)
         return f'{attr}="{rewritten}"'
 
-    return re.sub(r'(href|src)="(/static/[^"]+|/home|/why|/activities|/)"', replace_url, html)
+    return re.sub(r'(href|src)="(/static/[^"]+|/home|/why|/activities|/profiles|/)"', replace_url, html)
 
 
 def export_pages() -> None:

@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}APS | Profiles{% endblock %}
+
+{% block content %}
+  <header class="site-header" aria-label="APS 홈페이지 상단 메뉴">
+    <a class="brand-link" href="{{ url_for('intro') }}" aria-label="APS 인트로로 이동">
+      {% if logo_available %}
+        <img class="brand-logo" src="{{ url_for('static', filename='images/aps_logo.png') }}" alt="APS 로고">
+      {% else %}
+        <span class="brand-mark">APS</span>
+      {% endif %}
+    </a>
+    <nav class="site-nav" aria-label="주요 페이지">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('why') }}">Why APS?</a>
+      <a href="{{ url_for('activities') }}">Activities</a>
+      <a href="{{ url_for('profiles') }}" aria-current="page">Profiles</a>
+    </nav>
+  </header>
+
+  <main class="page-transition">
+    <section class="profile-page" aria-labelledby="profiles-title">
+      <div class="profile-heading">
+        <p class="eyebrow">APS Operators</p>
+        <h1 id="profiles-title">Profiles</h1>
+      </div>
+
+      <div class="profile-grid">
+        {% for profile in profiles %}
+          <article class="profile-card">
+            <div class="profile-photo" aria-label="{{ profile.name }} 사진 영역">
+              {% if profile.photo %}
+                <img src="{{ url_for('static', filename='images/' ~ profile.photo) }}" alt="{{ profile.name }} 프로필 사진">
+              {% else %}
+                <span>{{ profile.name[:1] }}</span>
+              {% endif %}
+            </div>
+
+            <div class="profile-main">
+              <div class="profile-id">
+                <p class="profile-affiliation">{{ profile.affiliation }}</p>
+                <h2>{{ profile.name }}</h2>
+                <p class="profile-role">{{ profile.role }}</p>
+              </div>
+
+              {% if profile.links %}
+                <div class="profile-links" aria-label="{{ profile.name }} 링크">
+                  {% for label, href in profile.links.items() %}
+                    <a class="profile-link-icon" href="{{ href }}" target="_blank" rel="noopener noreferrer" aria-label="{{ profile.name }} {{ label }} 링크" title="{{ label }}">
+                      {% if label == "github" %}
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                          <path d="M12 2.4c-5.3 0-9.6 4.3-9.6 9.6 0 4.2 2.7 7.8 6.5 9.1.5.1.7-.2.7-.5v-1.7c-2.6.6-3.2-1.1-3.2-1.1-.4-1-.9-1.3-.9-1.3-.8-.5.1-.5.1-.5.8.1 1.3.9 1.3.9.8 1.3 2 1 2.5.8.1-.6.3-1 .5-1.2-2.1-.2-4.3-1-4.3-4.7 0-1 .4-1.9.9-2.5-.1-.2-.4-1.2.1-2.5 0 0 .8-.3 2.6 1 .8-.2 1.6-.3 2.4-.3.8 0 1.6.1 2.4.3 1.8-1.2 2.6-1 2.6-1 .5 1.3.2 2.3.1 2.5.6.7.9 1.5.9 2.5 0 3.6-2.2 4.4-4.3 4.7.3.3.6.9.6 1.7v2.5c0 .3.2.6.7.5 3.8-1.3 6.5-4.9 6.5-9.1 0-5.3-4.3-9.6-9.6-9.6Z"></path>
+                        </svg>
+                      {% elif label == "notion" %}
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                          <path d="M5.1 3.2 17.9 2l3.1 2.3v15.5l-13 1.5-3-2.2V3.2Zm2 2.4v12.1l10.7-.9V4.7L7.1 5.6Zm2.6 2.5h2.1l4.2 6.3V8.9l-1.5-.2V7.3h4.1v1.4l-1.3.2v9h-1.9l-4.5-6.8v5.9l1.6.2v1.4H8.2v-1.4l1.5-.2V8.9l-1.5-.2V7.3h1.5v.8Z"></path>
+                        </svg>
+                      {% else %}
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                          <path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm5.6 5.4h-2.7a13.6 13.6 0 0 0-1.1-3 7.1 7.1 0 0 1 3.8 3Zm-5.6-3c.5.7 1 1.7 1.3 3h-2.6c.3-1.3.8-2.3 1.3-3Zm-6.9 8.1a7.2 7.2 0 0 1 0-3h3.1a15.7 15.7 0 0 0 0 3H5.1Zm1.3 2.1h2.7c.3 1.2.6 2.2 1.1 3a7.1 7.1 0 0 1-3.8-3Zm2.7-7.2H6.4a7.1 7.1 0 0 1 3.8-3 13.6 13.6 0 0 0-1.1 3Zm2.9 10.2c-.5-.7-1-1.7-1.3-3h2.6c-.3 1.3-.8 2.3-1.3 3Zm1.8-5.1h-3.6a13.1 13.1 0 0 1 0-3h3.6a13.1 13.1 0 0 1 0 3Zm.1 5.1c.5-.8.8-1.8 1.1-3h2.7a7.1 7.1 0 0 1-3.8 3Zm1.9-5.1a15.7 15.7 0 0 0 0-3h3.1a7.2 7.2 0 0 1 0 3h-3.1Z"></path>
+                        </svg>
+                      {% endif %}
+                      <span>{{ label }}</span>
+                    </a>
+                  {% endfor %}
+                </div>
+              {% endif %}
+
+              <p class="profile-intro">{{ profile.intro }}</p>
+
+              <div class="profile-fields" aria-label="{{ profile.name }} 분야">
+                {% for field in profile.fields %}
+                  <span>{{ field }}</span>
+                {% endfor %}
+              </div>
+
+              {% if profile.history %}
+                <div class="profile-history">
+                  <h3>이력</h3>
+                  <ul>
+                    {% for history in profile.history %}
+                      <li>{{ history }}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>APS</span>
+    <span id="current-year">2026</span>
+  </footer>
+{% endblock %}

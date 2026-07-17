@@ -15,20 +15,27 @@
       <a href="{{ url_for('home') }}">Home</a>
       <a href="{{ url_for('why') }}">Why APS?</a>
       <a href="{{ url_for('activities') }}" aria-current="page">Activities</a>
+      <a href="{{ url_for('profiles') }}">Profiles</a>
     </nav>
   </header>
 
   <main class="page-transition">
     <section class="archive-page" aria-labelledby="activities-title">
       <div class="archive-top">
-        <p class="eyebrow">Archive</p>
-        <h1 id="activities-title">동아리 활동 내역</h1>
+        <div>
+          <p class="eyebrow">Activity Records</p>
+          <h1 id="activities-title">동아리 활동 내역</h1>
+        </div>
       </div>
 
       <div class="archive-timeline">
         {% for group in activity_years %}
           <section class="archive-year" aria-labelledby="year-{{ group.year }}">
-            <h2 id="year-{{ group.year }}">{{ group.year }}</h2>
+            <div class="archive-year-heading">
+              <h2 id="year-{{ group.year }}">{{ group.year }}</h2>
+              <span>{{ group["items"]|length }} records</span>
+            </div>
+
             <div class="archive-list">
               {% for activity in group["items"] %}
                 <article class="archive-item">

@@ -1,0 +1,153 @@
+[
+  {
+    "name": "정진우",
+    "affiliation": "우석대학교 정보보안학과",
+    "role": "APS 13~14대 회장",
+    "photo": "jinwoo_profile.jpg",
+    "intro": "클라우드를 사랑하는 남자, 사이클 최장거리 200km",
+    "history": [
+      "APS 13~14대 회장",
+      "CCNA 자격 소지",
+      "네트워크 준 전문가"
+    ],
+    "fields": [
+      "Network",
+      "Cloud"
+    ],
+    "links": {}
+  },
+  {
+    "name": "김영빈",
+    "affiliation": "우석대학교 정보보안학과",
+    "role": "APS 부회장",
+    "photo": "youngbin_profile.png",
+    "intro": "현재 임베디드 시스템 보안에 관심이 있고, 오픈스택과 인프라 관련 공부를 하고있습니다.",
+    "history": [
+      "제7회 우석 컴퓨팅사고 창작대회 대상"
+    ],
+    "fields": [
+      "Pwnable",
+      "Reverse Engineering"
+    ],
+    "links": {
+      "blog": "https://nekonic.github.io/",
+      "github": "https://github.com/Nekonic"
+    }
+  },
+  {
+    "name": "엄가원",
+    "affiliation": "우석대학교 정보보안학과",
+    "role": "회원",
+    "photo": "gawon_profile.png",
+    "intro": "안녕하세요. 네트워크 보안과 모바일 포렌식을 연구하는 엄가원입니다. 모바일 디지털 증거 분석과 네트워크 보안 기술을 바탕으로 실무에 활용할 수 있는 기술을 공부하는 데 관심이 있습니다.",
+    "history": [
+      "2024 전공 동아리 APS 회장",
+      "2024 제6회 컴퓨팅사고 대회 대상 수상 (총장상)",
+      "2024 화이트해커 양성을 위한 정보보안 전문과정",
+      "2025 우석인재상 (표창장)",
+      "2025 BoB 14기 포렌식 트랙",
+      "2025 모바일 애플리케이션의 포렌식 아티팩트 자동 식별 프로젝트",
+      "2026 선거관리위원회 포렌식 요원"
+    ],
+    "fields": [
+      "Mobile Forensics",
+      "Network Security"
+    ],
+    "links": {
+      "notion": "https://spiritual-corn-d35.notion.site/13e912d55bf280fb9a58d0302c4dd551?source=copy_link"
+    }
+  },
+  {
+    "name": "소현우",
+    "affiliation": "우석대학교 정보보안학과",
+    "role": "회원",
+    "photo": "hyunwoo_profile.png",
+    "intro": "안녕하세요. 악성코드를 개조하고 연구하고 복구하는 걸 하는 평범한 대학생입니다. 물론 코딩도 좋아하고 버그바운티를 취미로 하고있습니다.",
+    "history": [
+      "CVE-2026-54565 (rhwp)",
+      "CVE-2026-59732 (rclone)",
+      "KVE-2026-1056",
+      "NotrinosERP 취약점 제보자",
+      "CTF팀 Rubiyalab 소속",
+      "2026년 2분기 MSRC 포인트 리더보드 등록자 (Microsoft)",
+      "전주교육대학교 영재교육원 소프트웨어 영재 과정 | 2018.03 ~ 2018.10"
+    ],
+    "fields": [
+      "Reverse Engineering",
+      "Web Hacking",
+      "Malware Analysis",
+      "Crypto"
+    ],
+    "links": {
+      "github": "https://github.com/Dangel165",
+      "team": "https://rubiyalab.team/"
+    }
+  },
+  {
+    "name": "박동준",
+    "affiliation": "우석대학교 정보보안학과",
+    "role": "회원",
+    "photo": "dongjun_profile.png",
+    "intro": "평범한 대학생이다.",
+    "history": [
+      "2026/05/20 KUSIS 호남권 대표 수료 - 호남권 대표 수료증",
+      "2026/04/25 2026 핵테온 세종 - 4문제 풀이, 약 1400점",
+      "2024/09/02 Indonesian Young Scientist Association(IYSA) - GOLD MEDAL",
+      "2024/06/15 영국 국제 프로젝트 대회(IGO) - Honourable Mention",
+      "2024/02/02 대만 국제과학전람회(TISF) - Certificate of Achievement",
+      "2023/08/11 국제연구프로그램(ORP) - 수료증",
+      "2023/08/04 World Science, Environment and Engineering Competition(WSEEC) - GRAND AWARD, BEST POSTER",
+      "2023/01/28 제20회 대한민국과학기술경진대회(KSEF) - 동상",
+      "2022/12/17 제7회 전국청소년과학신문공모전(DGIST 주최) - 고등부 후원사상"
+    ],
+    "fields": [
+      "Cloud",
+      "LLM Security"
+    ],
+    "links": {
+      "github": "https://github.com/plyegh"
+    }
+  },
+  {
+    "name": "박지훈",
+    "affiliation": "우석대학교 정보보안학과",
+    "role": "회원",
+    "photo": "jihoon_profile.png",
+    "intro": "모의해킹 전문가를 목표로 두고 공부하고있는 대학생입니다.",
+    "history": [],
+    "fields": [
+      "Penetration Testing"
+    ],
+    "links": {
+      "github": "https://github.com/SQuare70"
+    }
+  },
+  {
+    "name": "윤진학",
+    "affiliation": "우석대학교 정보보안학과",
+    "role": "회원",
+    "photo": "jinhak_profile.png",
+    "intro": "아직 정해진길이 없지만 더욱 넓은 세계를 경험하며 여러가지 분야를 경험해보고있습니다.",
+    "history": [],
+    "fields": [
+      "3D",
+      "Web Development",
+      "Web Security"
+    ],
+    "links": {
+      "github": "https://github.com/jjoyya-git"
+    }
+  },
+  {
+    "name": "한보은",
+    "affiliation": "우석대학교 정보보안학과",
+    "role": "회원",
+    "photo": "boeun_profile.png",
+    "intro": "안녕하세요. 제 이름은 한보은입니다. 현재 우석대학교 정보보안학과에 재학 중입니다. 정보보안학과 동아리 APS에 속해있으며, 사이버범죄 수사 분야에 관심을 가지고 공부하고 있습니다.",
+    "history": [],
+    "fields": [
+      "Cyber Crime Investigation"
+    ],
+    "links": {}
+  }
+]

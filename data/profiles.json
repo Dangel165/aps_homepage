@@ -159,5 +159,23 @@
       "Cyber Crime Investigation"
     ],
     "links": {}
+  },
+  {
+    "name": "정성현",
+    "affiliation": "우석대학교 정보보안학과",
+    "role": "회원",
+    "photo": "sunghyun_profile.png",
+    "intro": "현재 정보보안의 다양한 분야를 접해보며 제게 맞는 세부 전공을 찾고 있는 단계입니다.",
+    "history": [
+      "2026 전북경찰청 누리캅스 위촉 및 활동"
+    ],
+    "fields": [
+      "Exploring",
+      "General Security"
+    ],
+    "links": {
+      "email": "wjdtjdgus0412@gmail.com",
+      "github": "https://github.com/JSH0412"
+    }
   }
 ]

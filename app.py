@@ -35,6 +35,7 @@ PROFILES_PATH = DATA_DIR / "profiles.json"
 # Only plain filenames are accepted for JSON-provided images. This avoids
 # remote URLs, absolute paths, ".." traversal, and nested path tricks.
 SAFE_IMAGE_NAME = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.-]{0,80}\.(?:png|jpg|jpeg|webp|svg)$")
+EMAIL_ADDRESS = re.compile(r"^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]{1,64}@[A-Za-z0-9.-]{1,190}\.[A-Za-z]{2,24}$")
 
 
 def create_app() -> Flask:
@@ -290,10 +291,17 @@ def validate_profile(item: Any) -> dict[str, Any]:
 
         validated_links: dict[str, str] = {}
         for label, href in links.items():
-            if label not in {"blog", "github", "notion", "team"}:
+            if label not in {"blog", "email", "github", "notion", "team"}:
                 abort(500)
             if not isinstance(href, str) or len(href.strip()) > 160:
                 abort(500)
+
+            if label == "email":
+                email = href.strip()
+                if not EMAIL_ADDRESS.fullmatch(email):
+                    abort(500)
+                validated_links[label] = f"mailto:{email}"
+                continue
 
             parsed = urlparse(href.strip())
             if parsed.scheme != "https" or not parsed.netloc or parsed.username or parsed.password:

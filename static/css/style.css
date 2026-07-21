@@ -650,6 +650,7 @@ h2 {
   color: #c6d6e2;
   font-size: 0.9rem;
   line-height: 1.5;
+  white-space: pre-line;
 }
 
 .profile-history li::before {

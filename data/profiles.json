@@ -14,7 +14,9 @@
       "Network",
       "Cloud"
     ],
-    "links": {}
+    "links": {
+      "notion": "https://app.notion.com/p/085995396a50827e9c9201ced62e98ce"
+    }
   },
   {
     "name": "김영빈",
@@ -70,7 +72,8 @@
       "NotrinosERP 취약점 제보자",
       "CTF팀 Rubiyalab 소속",
       "2026년 2분기 MSRC 포인트 리더보드 등록자 (Microsoft)",
-      "전주교육대학교 영재교육원 소프트웨어 영재 과정 | 2018.03 ~ 2018.10"
+      "전주교육대학교 영재교육원 소프트웨어 영재 과정 | 2018.03 ~ 2018.10",
+      "팀: 던젤여친구함 2026 SCA CTF 일반부 20등"
     ],
     "fields": [
       "Reverse Engineering",

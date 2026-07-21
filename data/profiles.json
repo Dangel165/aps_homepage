@@ -15,7 +15,7 @@
       "Cloud"
     ],
     "links": {
-      "notion": "https://app.notion.com/p/085995396a50827e9c9201ced62e98ce"
+      "notion": "https://dented-lift-19d.notion.site/085995396a50827e9c9201ced62e98ce?source=copy_link"
     }
   },
   {
@@ -25,7 +25,14 @@
     "photo": "youngbin_profile.png",
     "intro": "현재 임베디드 시스템 보안에 관심이 있고, 오픈스택과 인프라 관련 공부를 하고있습니다.",
     "history": [
-      "제7회 우석 컴퓨팅사고 창작대회 대상"
+      "2025 제7회 우석 컴퓨팅사고 창작대회 대상",
+      "2025 CHFI(Computer Hacking Forensic Investigator) 과정 이수",
+      "2024 정보처리기능사 합격",
+      "2023 호남제일고 일본문화탐구보고회 은상 (163명 중 2위)",
+      "2023 한국정보올림피아드 (KOI) 고등부 상위 37%",
+      "2022 전라북도 해커톤 SW·AI 창의캠프 1위",
+      "2022 호남제일고 인공지능부 1기 기장",
+      "2021 전주온빛중학교 인공지능부 1기 프로그래밍 담당"
     ],
     "fields": [
       "Pwnable",
